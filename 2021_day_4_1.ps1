@@ -2,6 +2,7 @@ $content = Get-Content .\2021_day_4_input.txt
 $numbers = $content[0].Split(",")
 $boards = $content | Where-Object {($_ -and $_ -ne $content[0])}
 $boardsAmount = $boards.count / 5
+$numbersDrawn = 0
 $skipRow = 0
 $takeRow = 5
 $bingoWon = $false
